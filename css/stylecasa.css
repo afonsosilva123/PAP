@@ -1,0 +1,96 @@
+.dados,.esq,.dados1{
+box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.4);
+background-color: whitesmoke;
+margin: 15px;
+padding: 15px;
+}
+.esq {
+  position: fixed;  
+  top: 0; 
+  left: 0;
+  width: 36%;
+}
+.dados{
+  margin-left: auto;
+  width: 60%;
+  margin-top: 28px;
+}
+.dados1{
+  margin-top: 28px;
+}
+.carousel {
+  max-height: 700px; 
+  width: 100%; 
+}
+
+.carousel .carousel-inner {
+  height: 100%;
+  max-height: 700px !important; 
+  width: 100%;
+  background-color: #000 !important; 
+}
+
+.carousel img {
+  max-height: 700px;
+  width: 100%; 
+  object-fit: cover;
+  object-position: top; 
+  height: auto;
+}
+.carousel-thumbnails-container {
+  width: 100%; 
+  overflow-x: auto;
+}
+
+.carousel-thumbnails {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.carousel-thumbnails img {
+  width: 100px; 
+  margin: 10px;
+  cursor: pointer;
+}
+
+.carousel-thumbnails img.active {
+  border: 2px solid #007bff;
+}
+.body-text{
+  margin-left: 15px;
+}
+.esq{
+  margin-top: 100px;
+}
+.ff{
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 928px)  {
+  .ff{
+    flex-direction: column !important;
+    justify-content: left;
+    margin: 15px;
+    row-gap: 10px;
+  }
+  .esq{
+    width: 100%;
+    margin: 0;
+    position: relative;
+  }
+  .dados{
+    width: 100%;
+    margin: 0;
+  }
+}
+@media (max-width:400px){
+  .carousel-thumbnails img {
+    width: 70px;
+    margin: 5px;
+  }
+}                        
+.a9{
+  width: 70%;
+  margin: auto;
+}
